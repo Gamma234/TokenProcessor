@@ -21,6 +21,6 @@
 
 | Type      | Example |
 | --------- | ------- |
-| STRING    | qwer_123 _345zxcv _ |
+| STRING    | qwer_123  _345zxcv  _ |
 | INTEGER   | 123 456 7890 0123 00123 0 00000 |
 | DELIMITER | ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ ` { | } ~ |
