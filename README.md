@@ -4,6 +4,7 @@ TokenProcessor can cut tokens.
 
 # Description
 
++ You can see code files in "code".
 + There are some input files in "test_input".
 + You can see rach result from each version in "test_output".
 
