@@ -19,7 +19,7 @@
 
 ### \[Token Types]
 
-| Type      | Length                    | Example                                                          |
+| Type      | Length                    | Examples                                                         |
 |:---------:|:-------------------------:|:---------------------------------------------------------------- |
 | STRING    | 1 ~ n characters (n >= 1) | qwer_123 _345zxcv _                                              |
 | INTEGER   | 1 ~ n characters (n >= 1) | 123 456 7890 0123 00123 0 00000                                  |
