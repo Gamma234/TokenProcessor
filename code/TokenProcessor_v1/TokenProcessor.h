@@ -7,6 +7,8 @@
 # include <vector>
 # include <stdlib.h>
 
+/* TokenProcessor Version 1 */
+
 typedef int TokenType ;
 
 # define STRING 1
