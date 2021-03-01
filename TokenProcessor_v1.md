@@ -12,8 +12,8 @@
 
 ### \[Description]
 
-+ A class named "TokenProcessor" is in the "TokenProcessor_v1.h".
-+ "TokenProcessor_v1.cpp" is an example for using "TokenProcessor" in the "TokenProcessor_v1.h".
++ A class named "TokenProcessor" is in the "TokenProcessor.h".
++ "TokenProcessor_v1.cpp" is an example for using "TokenProcessor" in the "TokenProcessor.h".
 
 ----
 
