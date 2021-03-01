@@ -28,7 +28,7 @@
 | DELIMITER  | 2 characters              | += ++ -= -- -> \*= \*/ /= // /\* %= <= << >= >> != == && &= \|\| \|= :: ## .\* ^= |
 | DELIMITER  | 3 characters              | ->* <<= >>=                                                                       |
 | STRING     | 1 ~ n characters (n >= 1) | "\\"Hello World\\" !"                                                             |
-| CHAR       | 1 ~ n characters (n >= 1) | "\\'Hello World\\' !"                                                             |
+| CHAR       | 1 ~ n characters (n >= 1) | '\\'Hello World\\' !'                                                             |
 
 ----
 
