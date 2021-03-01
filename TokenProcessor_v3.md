@@ -50,5 +50,5 @@
 
 | Character | Normal Condition | Special Condition |
 |:---------:|:----------------:|:-----------------:|
-|           |                  |                   |
+|           |  |                   |
 
