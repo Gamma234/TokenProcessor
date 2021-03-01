@@ -43,7 +43,7 @@ private:
     bool IsDelimiter( char ch ) ;
 
     TokenData GetLetterToken( char firstChar, size_t & index, std::string & source ) ;
-    TokenData GetDigitToken( char firstChar, size_t & index, std::string & source, bool beginWithInteger ) ;
+    TokenData GetNumberToken( char firstChar, size_t & index, std::string & source, bool beginWithInteger ) ;
     TokenData GetDelimiterToken( char firstChar, size_t & index, std::string & source ) ;
 
 public:
@@ -88,7 +88,7 @@ void TokenProcessor::CutLine( std::string str ) {
             tokenList.push_back( GetLetterToken( str[i], i, str ) ) ;
         } // else if
         else if ( IsDigit( str[i] ) ) {
-            tokenList.push_back( GetDigitToken( str[i], i, str, true ) ) ;
+            tokenList.push_back( GetNumberToken( str[i], i, str, true ) ) ;
         } // else if
         else { // IsDelimiter( str[i] )
             tokenList.push_back( GetDelimiterToken( str[i], i, str ) ) ;
@@ -132,7 +132,7 @@ TokenData TokenProcessor::GetLetterToken( char firstChar, size_t & index, std::s
 
 } // TokenProcessor::GetLetterToken()
 
-TokenData TokenProcessor::GetDigitToken( char firstChar, size_t & index, std::string & source, bool beginWithInteger ) {
+TokenData TokenProcessor::GetNumberToken( char firstChar, size_t & index, std::string & source, bool beginWithInteger ) {
 
     std::string token = "" ;
     bool isInt = beginWithInteger, running = true ;
@@ -167,7 +167,7 @@ TokenData TokenProcessor::GetDigitToken( char firstChar, size_t & index, std::st
     return ( isInt ? TokenData( token, atoi( token.c_str() ), 0.0, INTEGER ) :
                      TokenData( token, 0, atof( token.c_str() ), DOUBLE ) ) ;
 
-} // TokenProcessor::GetDigitToken()
+} // TokenProcessor::GetNumberToken()
 
 TokenData TokenProcessor::GetDelimiterToken( char firstChar, size_t & index, std::string & source ) {
 
@@ -305,7 +305,7 @@ TokenData TokenProcessor::GetDelimiterToken( char firstChar, size_t & index, std
                 token += source[++index] ; // .*
             } // if
             else if ( IsDigit( source[index + 1] ) ) {
-                return GetDigitToken( firstChar, index, source, false ) ; // number
+                return GetNumberToken( firstChar, index, source, false ) ; // number
             } // else if
             else {
                 ;
