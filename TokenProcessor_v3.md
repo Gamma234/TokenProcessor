@@ -34,7 +34,7 @@
 
 ### \[Special Single Character]
 
-+ These characters will be detected in "STRING" and "CHAR".
++ These characters below will be special in "STRING" and "CHAR".
 
 | Character | Description         |
 |:---------:| ------------------- |
